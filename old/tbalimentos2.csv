@@ -1,0 +1,378 @@
+NomeAlimento,Energia_kcal,Proteinas_g,Lipideos_g,Colesterol_mg,Carboidratos_g,Calcio_mg,Ferro_mg,VitaminaA,VitaminaC,IsBreakfast,IsLunch,IsDinner
+"Rice, brown, cooked",124,2.6,1,0,25.8,5,0.3,0,0,TRUE,TRUE,TRUE
+"Rice, type 1, cooked",128,2.5,0.2,0,28.1,4,0.1,0,0,TRUE,TRUE,TRUE
+"Rice, type 2, cooked",130,2.6,0.4,0,28.2,3,0.1,0,0,TRUE,TRUE,TRUE
+"Oats, flakes, raw",394,13.9,8.5,0,66.6,48,4.4,0,1.4,TRUE,FALSE,FALSE
+"Cookie, sweet, cornstarch",443,8.1,12,0,75.2,54,1.8,0,6.2,TRUE,FALSE,FALSE
+"Cookie, sweet, filled with chocolate",472,6.4,19.6,0,70.5,27,2.3,0,3.5,TRUE,FALSE,FALSE
+"Cookie, sweet, strawberry-filled",471,5.7,19.6,0,71,36,1.5,0,0,TRUE,TRUE,FALSE
+"Cookie, sweet, wafer, filled with chocolate",502,5.6,24.7,0,67.5,23,2.4,0,0,TRUE,FALSE,FALSE
+"Cookie, sweet, wafer, strawberry filled",513,4.5,26.4,1,67.4,14,1.1,0,0,TRUE,FALSE,FALSE
+"Cookie, salty, cream cracker",432,10.1,14.4,0,68.7,20,2.2,0,0,TRUE,TRUE,FALSE
+"Cake, ready, cassava",324,4.4,12.7,73,47.9,85,0.5,0,0,FALSE,FALSE,FALSE
+"Cake, ready, chocolate",410,6.2,18.5,77,54.7,75,2.1,0,0,FALSE,FALSE,FALSE
+"Cake, ready, coconut",333,5.7,11.3,63,52.3,57,0.8,0,0,FALSE,FALSE,FALSE
+"Cake, ready, corn",311,4.8,12.4,82,45.1,83,0.7,56.89,0,FALSE,FALSE,FALSE
+"Canjica, with whole milk",112,2.4,1.2,1,23.6,43,0.1,0,0,TRUE,TRUE,TRUE
+"Cereals, corn flakes, salted",370,7.3,1.6,0,80.8,2,0.5,0,0,TRUE,TRUE,TRUE
+"Cereal, corn, flakes, unsalted",363,6.9,1.2,0,80.4,2,1.7,0,0,TRUE,TRUE,TRUE
+"Cereals, porridge, corn, children's",394,6.4,1.1,0,87.3,219,3,21.42,109.4,TRUE,TRUE,FALSE
+"Cereals, vitamin mix, wheat, barley and oats",381,8.9,2.1,0,81.6,584,12.6,0,13.1,TRUE,TRUE,TRUE
+"Breakfast cereal, corn",365,7.2,1,0,83.8,143,3.1,46.38,17.3,TRUE,FALSE,FALSE
+"Breakfast cereal, corn, sugar",377,4.7,0.7,0,88.8,56,3.9,46.38,14.6,TRUE,FALSE,FALSE
+"Curau, green corn",78,2.4,1.6,5,13.9,53,0.4,48.21,0,TRUE,TRUE,TRUE
+"Lasagna, fresh pasta, cooked",164,5.8,1.2,0,32.5,10,1.2,0,0,FALSE,TRUE,TRUE
+"Noodles, instant",436,8.8,17.2,0,62.4,18,0.8,0,0,FALSE,TRUE,TRUE
+"Corn, green, canned, drained",98,3.2,2.4,0,17.1,2,0.6,72,1.7,FALSE,FALSE,TRUE
+"Bread, oatmeal",343,12.4,5.7,0,59.6,109,4.7,0,0,TRUE,TRUE,FALSE
+"Bread, soy",309,11.3,3.6,0,56.5,90,3.3,0,0,TRUE,TRUE,FALSE
+"Bread, gluten, shape",253,12,2.7,0,44.1,156,5.7,0,0,TRUE,TRUE,FALSE
+"Bread, corn, shape",292,8.3,3.1,6,56.4,78,3,0,0,TRUE,TRUE,FALSE
+"Bread, wheat, shape, wholemeal",253,9.4,3.7,0,49.9,132,3,0,0,TRUE,TRUE,TRUE
+"Bread, wheat, French",300,8,3.1,0,58.6,16,1,2.99,0,TRUE,TRUE,FALSE
+"Bread, wheat, kneaded",311,8.4,2.8,17,61.5,52,2.3,0,0,TRUE,TRUE,FALSE
+"Pastel, meat, fried",388,10.1,20.1,25,43.8,13,2.5,0,0,FALSE,TRUE,TRUE
+"Pastel, cheese, fried",422,8.7,22.7,15,48.1,126,1.3,17.58,0,FALSE,TRUE,TRUE
+"Pastel, dough, fried",570,6,40.9,0,49.3,11,1.4,0,0,FALSE,TRUE,TRUE
+"Popcorn, with soybean oil, unsalted",448,9.9,15.9,0,70.3,3,1.2,0,0,FALSE,TRUE,FALSE
+"Polenta, pre-cooked",103,2.3,0.3,0,23.3,1,0,0,0,TRUE,TRUE,TRUE
+"Toast, French bread",377,10.5,3.3,0,74.6,19,1.2,0,0,TRUE,TRUE,FALSE
+"Pumpkin, cabotian, boiled",48,1.4,0.7,0,10.8,8,0.3,0,7.5,FALSE,FALSE,TRUE
+"Pumpkin, strawberry, sautéed",29,0.4,0.8,0,6,19,0.1,143,6.7,TRUE,TRUE,TRUE
+"Zucchini, Italian, cooked",15,1.1,0.2,0,3,17,0.2,0,2.1,FALSE,TRUE,TRUE
+"Zucchini, Italian, sautéed",24,1.1,0.8,0,4.2,21,0.4,62.38,7.5,FALSE,TRUE,TRUE
+"Chard, raw",21,1.4,0.1,0,4.6,43,0.3,0,22.6,TRUE,TRUE,TRUE
+"Celery, raw",19,0.8,0.1,0,4.3,65,0.7,1374,5.9,TRUE,FALSE,FALSE
+"Lettuce, American, raw",9,0.6,0.1,0,1.7,14,0.3,0,11,TRUE,TRUE,TRUE
+"Lettuce, curly, raw",11,1.3,0.2,0,1.7,38,0.4,351,15.6,TRUE,TRUE,TRUE
+"Lettuce, plain, raw",14,1.7,0.1,0,2.4,28,0.6,552,21.4,TRUE,TRUE,TRUE
+"Lettuce, purple, raw",13,0.9,0.2,0,2.5,34,2.5,468.63,13.5,TRUE,TRUE,FALSE
+"Garlic, sautéed",65,1.7,4.8,0,5.7,63,1.6,0,1.5,FALSE,FALSE,FALSE
+"Potato, baroa, boiled",80,0.9,0.2,0,18.9,12,0.4,0,17.1,FALSE,FALSE,TRUE
+"Potato, sweet, boiled",77,0.6,0.1,0,18.4,17,0.2,0,23.8,FALSE,TRUE,TRUE
+"Potato, fried, chips, industrialized",543,5.6,36.6,0,51.2,12,0.7,0,0,FALSE,TRUE,TRUE
+"Potato, English, boiled",52,1.2,0,0,11.9,4,0.2,0,3.8,FALSE,FALSE,TRUE
+"Potato, English, fried",267,5,13.1,0,35.6,6,0.4,0,16.3,FALSE,TRUE,TRUE
+"Potato, English, sautéed",68,1.3,0.9,0,14.1,4,0.3,0,0,TRUE,TRUE,TRUE
+"Eggplant, boiled",19,0.7,0.1,0,4.5,11,0.2,0,0,TRUE,TRUE,TRUE
+"Beet, boiled",32,1.3,0.1,0,7.2,15,0.2,0,1.2,FALSE,FALSE,FALSE
+"Beet, raw",49,1.9,0.1,0,11.1,18,0.3,0,3.1,TRUE,FALSE,FALSE
+"Cookie, sweet starch",438,1.3,12.2,9,80.5,30,1.8,0,0,TRUE,TRUE,FALSE
+"Broccoli, boiled",25,2.1,0.5,0,4.4,51,0.5,0,42,FALSE,TRUE,TRUE
+"Yam, boiled",78,1.5,0.1,0,18.9,5,0.3,0,0,FALSE,TRUE,FALSE
+"Catalonia, sautéed",63,2,4.8,0,4.8,63,1.2,1275,0,FALSE,FALSE,FALSE
+"Onion, raw",39,1.7,0.1,0,8.9,14,0.2,0,4.7,FALSE,FALSE,TRUE
+"Carrot, cooked",30,0.8,0.2,0,6.7,26,0.1,918,0,FALSE,FALSE,TRUE
+"Carrot, raw",34,1.3,0.2,0,7.7,23,0.2,1989,5.1,FALSE,FALSE,FALSE
+"Chayote, cooked",19,0.4,0,0,4.8,8,0.1,0,5.6,FALSE,TRUE,TRUE
+"Coriander, dried leaves",309,20.9,10.4,0,48,784,81.4,0,40.8,TRUE,FALSE,TRUE
+"Cabbage, butter, raw",27,2.9,0.5,0,4.3,131,0.5,744,96.7,TRUE,TRUE,TRUE
+"Cabbage, buttered, sautéed ",90,1.7,6.6,0,8.7,177,0.5,576,76.9,TRUE,TRUE,TRUE
+"Cauliflower, cooked",19,1.2,0.3,0,3.9,16,0.1,0,23.7,FALSE,TRUE,TRUE
+"Spinach, New Zealand, raw",16,2,0.2,0,2.6,98,0.4,726,2.4,TRUE,TRUE,TRUE
+"Spinach, New Zealand, sautéed",67,2.7,5.4,0,4.2,112,0.6,935.75,5.3,TRUE,TRUE,TRUE
+"Jiló, raw",27,1.4,0.2,0,6.2,20,0.3,19,6.8,FALSE,TRUE,FALSE
+"Jurubeba, raw",126,4.4,3.9,0,23.1,151,0.9,0,13.8,TRUE,FALSE,FALSE
+"Cassava, cooked",125,0.6,0.3,0,30.1,19,0.1,0,11.1,FALSE,FALSE,TRUE
+"Cassava, farofa, seasoned",406,2.1,9.1,0,80.3,66,1.4,0,0,TRUE,FALSE,TRUE
+"Cassava, fried",300,1.4,11.2,0,50.3,23,0.3,0,0,FALSE,TRUE,TRUE
+"Gnocchi, potato, boiled",181,5.9,1.9,15,36.8,11,1.6,15.47,0,FALSE,TRUE,TRUE
+"Palm heart, juçara, pickled",23,1.8,0.4,0,4.3,58,0.3,0,2,FALSE,TRUE,TRUE
+"Palm hearts, pupunha, pickled",29,2.5,0.5,0,5.5,32,0.2,0,8.7,FALSE,TRUE,TRUE
+"Bread, cheese, baked",363,5.1,24.6,68,34.2,102,0.3,61.31,0,TRUE,TRUE,TRUE
+"Cucumber, raw",10,0.9,0,0,2,10,0.1,5.38,5,TRUE,TRUE,TRUE
+"Bell bell pepper, yellow, raw",28,1.2,0.4,0,6,10,0.4,60,201.4,TRUE,TRUE,FALSE
+"Bell bell pepper, green, raw",21,1.1,0.2,0,4.9,9,0.4,69,100.2,TRUE,TRUE,FALSE
+"Bell bell pepper, red, raw",23,1,0.1,0,5.5,6,0.3,129,158.2,TRUE,FALSE,FALSE
+"Radish, raw",14,1.4,0.1,0,2.7,21,0.4,0,9.6,TRUE,FALSE,FALSE
+"Cabbage, white, raw",17,0.9,0.1,0,3.9,35,0.2,9,18.7,TRUE,TRUE,TRUE
+"Cabbage, purple, raw",31,1.9,0.1,0,7.2,44,0.5,0,43.2,TRUE,TRUE,FALSE
+"Cabbage, red, sautéed",42,1.8,1.2,0,7.6,43,0.5,0,40.5,FALSE,TRUE,TRUE
+"Vegetable selection, canned",57,3.4,0.4,0,12.7,16,1.1,366.25,0,FALSE,FALSE,TRUE
+"Blueberries, raw",30,2.7,0.7,0,4.9,126,1.3,1701,1.5,TRUE,TRUE,FALSE
+"Tomato, seeded, raw",15,1.1,0.2,0,3.1,7,0.2,81,21.2,TRUE,TRUE,FALSE
+"Tomatoes, extract",61,2.4,0.2,0,15,29,2.1,249,18,TRUE,FALSE,FALSE
+"Tomato, industrialized sauce",38,1.4,0.9,0,7.7,12,1.6,114,2.7,FALSE,FALSE,TRUE
+Tomato puree,28,1.4,0,0,6.9,13,1.3,135,5.4,TRUE,TRUE,TRUE
+"Tomato, salad",21,0.8,0,0,5.1,7,0.3,0,12.8,FALSE,TRUE,FALSE
+"Avocado, raw",96,1.2,8.4,0,6,8,0.2,0,8.7,TRUE,TRUE,FALSE
+"Pineapple, raw",48,0.9,0.1,0,12.3,22,0.3,0,34.6,TRUE,TRUE,FALSE
+"Pineapple, pulp, frozen",31,0.5,0.1,0,7.8,14,0.4,3.38,1.2,FALSE,FALSE,FALSE
+"Acai, raw",62,0.8,0.7,0,14.9,6,0.2,0,10.3,TRUE,FALSE,FALSE
+"Açaí, pulp, with guaraná syrup and glucose",110,0.7,3.7,0,21.5,22,0.3,0,10.3,TRUE,TRUE,FALSE
+"Açaí, pulp, frozen",58,0.8,3.9,0,6.2,35,0.4,0,0,FALSE,FALSE,FALSE
+"Acerola, raw",33,0.9,0.2,0,8,13,0.2,370.5,941.4,TRUE,FALSE,FALSE
+"Acerola, pulp, frozen",22,0.6,0,0,5.5,8,0.2,288,623.2,FALSE,FALSE,FALSE
+"Plum, syrup, canned ",183,0.4,0,0,46.9,13,2.2,0,4.3,TRUE,FALSE,TRUE
+"Plum, raw",53,0.8,0,0,13.9,6,0.1,40.81,7.6,TRUE,TRUE,FALSE
+"Plum, in syrup, canned, drained ",177,1,0.3,0,47.7,39,2.7,0,5.2,TRUE,FALSE,TRUE
+"Atemoya, raw",97,1,0.3,0,25.3,23,0.2,0,10.1,FALSE,FALSE,FALSE
+"Banana, sweet bar",280,2.2,0.1,0,75.7,12,0.6,41.03,0,TRUE,FALSE,FALSE
+"Banana, fig, raw",105,1.1,0.1,0,27.8,6,0.2,0,17.5,TRUE,TRUE,FALSE
+"Banana, apple, raw",87,1.8,0.1,0,22.3,3,0.2,9.63,10.5,TRUE,TRUE,FALSE
+"Banana, nanica, raw",92,1.4,0.1,0,23.8,3,0.3,20.44,5.9,TRUE,TRUE,FALSE
+"Banana, gold, raw",112,1.5,0.2,0,29.3,3,0.3,74.56,7.6,TRUE,TRUE,FALSE
+"Banana, pacova, raw",78,1.2,0.1,0,20.3,5,0.4,0,0,TRUE,TRUE,FALSE
+"Banana, prata, raw",98,1.3,0.1,0,26,8,0.4,48.63,21.6,TRUE,TRUE,FALSE
+"Cajá-Manga, raw",46,1.3,0,0,11.4,13,0.2,0,26.7,FALSE,FALSE,FALSE
+"Cajá, pulp, frozen",26,0.6,0.2,0,6.4,9,0.3,159,0,FALSE,FALSE,FALSE
+"Cashew, raw",43,1,0.3,0,10.3,1,0.2,22,219.3,TRUE,TRUE,FALSE
+"Cashew, pulp, frozen",37,0.5,0.2,0,9.4,1,0.1,33,119.7,FALSE,FALSE,FALSE
+"Cashew, concentrated juice, bottled",45,0.4,0.2,0,10.7,1,0.1,15,138.7,FALSE,FALSE,FALSE
+"Persimmon, chocolate, raw",71,0.4,0.1,0,19.3,18,0.1,0,29.6,TRUE,TRUE,FALSE
+"Carambola, raw",46,0.9,0.2,0,11.5,5,0.2,0,60.9,TRUE,TRUE,FALSE
+"Ciriguela, raw",76,1.4,0.4,0,18.9,27,0.4,0,27,FALSE,FALSE,FALSE
+"Cupuaçu, raw",49,1.2,1,0,10.4,13,0.5,0,24.5,TRUE,TRUE,FALSE
+"Cupuaçu, pulp, frozen",49,0.8,0.6,0,11.4,5,0.3,0,10.5,FALSE,FALSE,FALSE
+"Fig, raw",41,1,0.2,0,10.2,27,0.2,0,0.8,FALSE,FALSE,FALSE
+"Guava, white, unpeeled, raw",52,0.9,0.5,0,12.4,5,0.2,0,99.2,TRUE,TRUE,FALSE
+"Guava, sweet paste",269,0.6,0,0,74.1,10,0.4,204.63,23.1,TRUE,TRUE,FALSE
+"Guava, sweet, peeled",286,0.4,0.1,0,78.7,15,0.4,75.5,34.3,TRUE,TRUE,FALSE
+"Guava, red, with peel, raw",54,1.1,0.4,0,13,4,0.2,57,80.6,TRUE,TRUE,FALSE
+"Graviola, raw",62,0.8,0.2,0,15.8,40,0.2,0,19.1,TRUE,TRUE,TRUE
+"Graviola, pulp, frozen",38,0.6,0.1,0,9.8,6,0.1,0,10.5,FALSE,FALSE,FALSE
+"Jabuticaba, raw",58,0.6,0.1,0,15.3,8,0.1,0,16.2,FALSE,FALSE,FALSE
+"Jackfruit, raw",88,1.4,0.3,0,22.5,11,0.4,0,14.8,TRUE,TRUE,FALSE
+"Jambo, raw",27,0.9,0.1,0,6.5,14,0.1,0,3.8,FALSE,FALSE,FALSE
+"Jamelão, raw",41,0.5,0.1,0,10.6,3,0,11.28,27.1,TRUE,TRUE,FALSE
+"Kiwi, raw",51,1.3,0.6,0,11.5,24,0.3,8.13,70.8,TRUE,TRUE,FALSE
+"Orange, bay, raw",45,1,0.1,0,11.5,35,0.1,5.81,56.9,TRUE,TRUE,FALSE
+"Orange, bay, juice",37,0.7,0,0,8.7,6,0.1,6,94.5,FALSE,FALSE,FALSE
+"Orange, land, raw",51,1.1,0.2,0,12.9,51,0.1,0,34.7,FALSE,FALSE,FALSE
+"Orange, land, juice",41,0.7,0.1,0,9.6,13,0.1,6.69,44.3,TRUE,FALSE,FALSE
+"Orange, lime, raw",46,1.1,0.1,0,11.5,31,0.1,0,43.5,TRUE,TRUE,FALSE
+"Orange, lime, juice",39,0.7,0.1,0,9.2,8,0,0,41.3,TRUE,FALSE,FALSE
+"Orange, pear, raw",37,1,0.1,0,8.9,22,0.1,1.38,53.7,TRUE,TRUE,FALSE
+"Orange, pear, juice",33,0.7,0.1,0,7.6,7,0,1.81,73.3,TRUE,TRUE,FALSE
+"Orange, valencia, raw",46,0.8,0.2,0,11.7,34,0.1,0,47.8,TRUE,FALSE,FALSE
+"Orange, valencia, juice",36,0.5,0.1,0,8.6,9,0,3,0,TRUE,FALSE,FALSE
+"Apple, Argentina, with peel, raw",63,0.2,0.2,0,16.6,3,0.1,0,1.5,TRUE,TRUE,FALSE
+"Apple, Fuji, with peel, raw",56,0.3,0,0,15.2,2,0.1,5.25,2.4,TRUE,TRUE,TRUE
+"Macauba, raw",404,2.1,40.7,0,13.9,67,0.8,1530,13.4,TRUE,TRUE,FALSE
+"Papaya, Formosa, raw",45,0.8,0.1,0,11.6,25,0.2,222,78.5,TRUE,TRUE,FALSE
+"Papaya, raw",40,0.5,0.1,0,10.4,22,0.2,177,82.2,TRUE,TRUE,FALSE
+" Papaya, green, sweet in syrup, drained",209,0.3,0.1,0,57.6,12,0.2,0,0,TRUE,TRUE,FALSE
+"Mango, Haden, raw",64,0.4,0.3,0,16.7,12,0.1,243,17.4,TRUE,TRUE,FALSE
+"Mango, Palmer, raw",72,0.4,0.2,0,19.4,12,0.1,1180.38,65.5,TRUE,TRUE,FALSE
+"Mango, pulp, frozen",48,0.4,0.2,0,12.5,7,0.1,0,24.9,FALSE,FALSE,FALSE
+"Mango, Tommy Atkins, raw",51,0.9,0.2,0,12.8,8,0.1,177,7.9,TRUE,TRUE,FALSE
+"Passion fruit, raw",68,2,2.1,0,12.3,5,0.6,171,19.8,TRUE,TRUE,FALSE
+"Passion fruit, pulp, frozen",39,0.8,0.2,0,9.6,5,0.3,0,7.3,FALSE,FALSE,FALSE
+"Passion fruit, concentrated juice, bottled",42,0.8,0.2,0,9.6,4,0.3,0,13.7,FALSE,FALSE,FALSE
+"Watermelon, raw",33,0.9,0,0,8.1,8,0.2,91.5,6.1,TRUE,TRUE,FALSE
+"Melon, raw",29,0.7,0,0,7.5,3,0.2,3,8.7,TRUE,TRUE,FALSE
+"Mexerica, Murcote, raw",58,0.9,0.1,0,14.9,33,0.1,0,21.8,FALSE,FALSE,FALSE
+"Mexerica, Rio, raw",37,0.7,0.1,0,9.3,17,0.1,0,112,FALSE,FALSE,FALSE
+"Strawberry, raw",30,0.9,0.3,0,6.8,11,0.3,0,63.6,TRUE,TRUE,FALSE
+"Pequi, raw",205,2.3,18,0,13,32,0.3,90,8.3,FALSE,FALSE,FALSE
+"Pear, Park, raw",61,0.2,0.2,0,16.1,9,0.3,0,2.4,FALSE,FALSE,FALSE
+"Pear, Williams, raw",53,0.6,0.1,0,14,8,0.1,0,2.8,FALSE,FALSE,FALSE
+"Peach, Aurora, raw",36,0.8,0,0,9.3,3,0.2,0,3.3,TRUE,TRUE,FALSE
+"Peach, canned, in syrup",63,0.7,0,0,16.9,4,0.6,71.31,0,TRUE,FALSE,FALSE
+"Pine cone, raw",88,1.5,0.3,0,22.4,21,0.2,0,35.9,TRUE,TRUE,FALSE
+"Pitanga, raw",41,0.9,0.2,0,10.2,18,0.4,231,24.9,FALSE,FALSE,FALSE
+"Pitanga, pulp, frozen",19,0.3,0.1,0,4.8,8,0.4,218.31,0,FALSE,FALSE,FALSE
+"Pomegranate, raw",56,0.4,0,0,15.1,5,0.3,0,8.1,TRUE,TRUE,FALSE
+"Tangerine, Poncã, raw",38,0.8,0.1,0,9.6,13,0.1,71.06,48.8,TRUE,TRUE,FALSE
+"Tangerine, Poncã, juice",36,0.5,0,0,8.8,4,0,76.75,41.8,TRUE,TRUE,FALSE
+"Tucumã, raw",262,2.1,19.1,0,26.5,46,0.6,3543.96,18,FALSE,TRUE,FALSE
+"Umbu, raw",37,0.8,0,0,9.4,12,0.1,0,24.1,FALSE,TRUE,FALSE
+"Umbu, pulp, frozen",34,0.5,0.1,0,8.8,11,0.2,0,4,FALSE,FALSE,FALSE
+"Grape, Italy, raw",53,0.7,0.2,0,13.6,7,0.1,8,3.3,FALSE,FALSE,FALSE
+"Grape, Ruby, raw",49,0.6,0.2,0,12.7,8,0.2,0,1.9,FALSE,FALSE,FALSE
+"Grape, concentrated juice, bottled",58,0,0,0,14.7,9,0.1,0,21,FALSE,FALSE,FALSE
+"Abbot, fillet, frozen, roasted",112,23.5,1.2,103,0,23,0.5,0,0,FALSE,FALSE,TRUE
+"Abbot, fillet, frozen, cooked",91,19.3,0.9,87,0,17,0.3,0,0,FALSE,FALSE,TRUE
+"Whiting, fillet, frozen, grilled",130,27.6,1.3,136,0,20,0.3,17.06,0,FALSE,TRUE,TRUE
+"Tuna, preserved in oil",166,26.2,6,53,0,7,1.2,0,0,FALSE,FALSE,TRUE
+"Cod, salted, sautéed",140,24,3.6,112,1.2,59,0.2,0,0,FALSE,TRUE,TRUE
+"Dogfish, fillet, with wheat flour, fried",208,25,10,75,3.1,30,1,52.13,0,FALSE,TRUE,TRUE
+"Dogfish, steak, boiled",116,25.6,0.7,83,0,10,0.3,35.25,0,FALSE,TRUE,TRUE
+"Shrimp, Rio Grande, large, boiled",90,19,1,241,0,90,1.3,0,0,FALSE,TRUE,TRUE
+"Shrimp, Sete Barbas, headless, in shell, fried",231,18.4,15.6,283,2.9,960,2.4,0,0,FALSE,TRUE,TRUE
+"Crab, boiled",83,18.5,0.4,85,0,357,2.9,0,0,FALSE,FALSE,TRUE
+"Corimbatá, baked",261,19.9,19.6,80,0,22,1,0,0,FALSE,FALSE,FALSE
+"Corimbatá, boiled",239,20.1,16.9,75,0,65,0.6,0,0,FALSE,FALSE,FALSE
+"Large corvina, baked",147,26.8,3.6,117,0,60,0.5,0,0,FALSE,FALSE,FALSE
+"Large corvina, boiled",100,23.4,2.6,123,0,69,0.6,18.83,0,FALSE,FALSE,FALSE
+"Freshwater sea bream, fresh",131,18.8,5.6,52,0,12,0.2,0,0,TRUE,TRUE,TRUE
+"Lambari, frozen, fried",327,28.4,22.8,246,0,1881,0.8,28.34,0,FALSE,TRUE,TRUE
+"Manjuba, with wheat flour, fried",344,23.5,22.6,282,10.2,763,3,89.83,0,FALSE,TRUE,TRUE
+"Manjuba, fried",349,30.1,24.5,270,0,575,0.9,36.2,0,FALSE,TRUE,TRUE
+"Hake, fillet, baked",122,26.6,0.9,91,0,36,0.4,0,0,TRUE,TRUE,TRUE
+"Hake, fillet, fried",192,26.9,8.5,109,0,36,0.4,0,0,FALSE,TRUE,TRUE
+"Hake, white, fried",223,27.4,11.8,165,0,378,0.5,118.05,0,TRUE,TRUE,TRUE
+"Hake, fillet, with wheat flour, fried",283,21.4,19.1,73,5,26,0.9,52.5,0,FALSE,TRUE,TRUE
+"Hake, fillet, fried",154,28.6,3.6,81,0,10,0.3,12.65,0,FALSE,TRUE,TRUE
+"Hake, fillet, escabeche sauce",142,11.8,8,43,5,20,1.5,19.19,6.9,FALSE,TRUE,TRUE
+"Pintado, baked",192,36.5,4,126,0,114,0.8,19.7,0,FALSE,FALSE,FALSE
+"Pintado, grilled",152,30.8,2.3,99,0,69,0.5,15.4,0,FALSE,TRUE,TRUE
+"Salmon, fillet, skin-on, fresh, grilled",229,23.9,14,85,0,29,0.5,0,0,FALSE,TRUE,TRUE
+"Salmon, skinless, fresh, grilled",243,26.1,14.5,73,0,15,0.4,0,0,FALSE,TRUE,TRUE
+"Sardine, baked",164,32.2,3,109,0,438,1.3,0,0,FALSE,TRUE,FALSE
+"Sardines, preserved in oil",285,15.9,24,73,0,550,3.5,0,0,FALSE,FALSE,FALSE
+"Sardines, fried",257,33.4,12.7,103,0,482,1.1,0,0,FALSE,TRUE,TRUE
+Ham,129,13.5,6.7,38,2.9,23,0.9,0,0,FALSE,FALSE,FALSE
+"Beef, sirloin, ground, cooked",212,26.7,10.9,103,0,4,2.7,0,0,FALSE,TRUE,TRUE
+"Beef, steak, fat-free, boiled",215,27.3,10.9,107,0,7,2.4,0,0,FALSE,TRUE,TRUE
+"Beef, meatballs, fried",272,18.2,15.8,36,14.3,27,1.9,0,0,FALSE,TRUE,TRUE
+"Beef, belly, boiled",133,21.6,4.5,245,0,13,0.6,0,0,FALSE,TRUE,TRUE
+"Beef, sirloin cap, with fat, grilled",312,30.7,20,120,0,7,2.6,0,0,FALSE,TRUE,TRUE
+"Beef, sirloin cap, fat-free, grilled",239,35.1,10,80,0,9,2.8,0,0,FALSE,TRUE,TRUE
+"Beef, beef jerky, cooked",263,36.4,11.9,113,0,15,3.5,0,0,FALSE,FALSE,FALSE
+"Beef, sirloin, breaded",352,20.6,24,99,12.2,15,2.9,15.08,0,FALSE,TRUE,TRUE
+"Beef, rib-eye steak, grilled",275,29.9,16.3,98,0,4,2.8,0,0,FALSE,TRUE,TRUE
+"Beef, sirloin, fatty, grilled",278,32.4,15.5,144,0,4,2.4,0,0,FALSE,TRUE,TRUE
+"Beef, sirloin, fat-free, grilled",194,35.9,4.5,102,0,5,2.4,0,0,FALSE,TRUE,TRUE
+"Beef, rib, roast",373,28.8,27.7,95,0,28,2.2,0,0,FALSE,TRUE,TRUE
+"Beef, hard loin, fat-free, cooked",217,31.9,8.9,71,0,4,1.7,6.18,0,FALSE,TRUE,TRUE
+"Beef, tenderloin, fat-free, boiled",219,32.4,8.9,84,0,4,2.6,7.4,0,FALSE,TRUE,TRUE
+"Beef, termite, roast",330,28.6,23,91,0,8,2.7,0,0,FALSE,TRUE,TRUE
+"Beef, liver, grilled",225,29.9,9,601,4.2,6,5.8,43722,0,FALSE,TRUE,TRUE
+"Beef, filet mingnon, fat-free, grilled",220,32.8,8.8,103,0,4,2.9,0,0,FALSE,TRUE,TRUE
+"Beef, flank, fat-free, boiled",196,29.4,7.8,62,0,4,2.8,5.28,0,FALSE,TRUE,TRUE
+"Beef, sirloin, with fat, cooked",338,24.2,26,65,0,3,2,0,0,FALSE,TRUE,TRUE
+"Beef, lizard, cooked",222,32.9,9.1,56,0,4,1.9,8.69,0,FALSE,TRUE,TRUE
+"Beef, tongue, cooked",315,21.4,24.8,105,0,6,2.1,0,0,FALSE,TRUE,TRUE
+"Beef, breast, grilled",153,30.7,2.4,88,0,4,2.4,0,0,FALSE,TRUE,TRUE
+"Beef, rump, fat-free, grilled",241,31.9,11.6,92,0,5,3.2,0,0,FALSE,TRUE,TRUE
+"Beef, muscle, fat-free, cooked",194,31.2,6.7,56,0,5,2.4,5.72,0,FALSE,TRUE,TRUE
+"Beef, shoulder, fat-free, cooked",194,29.7,7.4,56,0,6,2.2,0,0,FALSE,TRUE,TRUE
+"Beef, duckling, fat-free, grilled",219,35.9,7.3,126,0,5,3,0,0,FALSE,TRUE,TRUE
+"Beef, brisket, fat-free, cooked",338,22.2,27,100,0,4,1.6,0,0,FALSE,TRUE,TRUE
+"Beef, picanha, with fat, grilled",289,26.4,19.5,92,0,4,3.2,0,0,FALSE,TRUE,TRUE
+"Beef, picanha, fat-free, grilled",238,31.9,11.3,100,0,4,3.6,0,0,FALSE,TRUE,TRUE
+"Beef, dry, cooked",313,26.9,21.9,100,0,13,1.9,0,0,FALSE,TRUE,TRUE
+"Chicken drumstick, fried",283,9.6,11.8,15,34.5,18,1.3,0,0,FALSE,TRUE,TRUE
+"Croquette, beef, fried",347,16.9,22.7,38,18.1,18,2.3,0,0,FALSE,TRUE,TRUE
+"Pie, chicken, pre-cooked, baked",358,6.9,15.6,23,47.5,16,1.2,0,0,FALSE,TRUE,TRUE
+"Pie, chicken, pre-cooked",377,7.3,22.9,23,35.5,14,0.7,0,0,FALSE,TRUE,TRUE
+"Chicken, free-range, whole, skinned, boiled",243,23.9,15.6,110,0,17,1.7,48.48,0,FALSE,TRUE,TRUE
+"Chicken, redneck, whole, skinless, boiled",196,29.6,7.7,106,0,66,2.1,18.16,0,FALSE,TRUE,TRUE
+"Chicken, heart, grilled",207,22.4,12.1,280,0.6,8,6.5,0,0,FALSE,TRUE,TRUE
+"Chicken, thigh, skinned, baked",215,28.5,10.4,145,0.1,8,1.2,17.92,0,FALSE,TRUE,TRUE
+"Chicken, thigh, skinless, boiled",167,26.9,5.8,133,0,12,0.8,0,0,FALSE,TRUE,TRUE
+"Chicken, fillet, breaded",221,28.5,7.8,84,7.5,9,1.1,19.83,0,FALSE,TRUE,TRUE
+"Chicken, whole, skinless, roast",187,28,7.5,111,0,9,0.6,0,0,FALSE,TRUE,TRUE
+"Chicken, whole, skinless, boiled",170,25,7.1,99,0,8,0.5,0,0,FALSE,TRUE,TRUE
+"Chicken, breast, skinned, roast",212,33.4,7.6,109,0,8,0.5,18.68,0,FALSE,TRUE,TRUE
+"Chicken, breast, skinless, boiled",163,31.5,3.2,89,0,6,0.3,0,0,FALSE,TRUE,TRUE
+"Chicken, breast, skinless, grilled",159,32,2.5,89,0,5,0.3,0,0,FALSE,TRUE,TRUE
+"Chicken, drumstick, skinned, roasted",260,28.7,15.2,158,0,11,1.2,24.66,0,FALSE,TRUE,TRUE
+"Chicken, drumstick, skinless, roast",233,29.2,12,145,0,12,1.2,32.1,0,FALSE,TRUE,TRUE
+"Hamburger, beef, fried",258,20,17,49,6.3,62,3,0,0,FALSE,TRUE,TRUE
+"Hamburger, beef, grilled",210,13.2,12.4,59,11.3,56,2.6,0,0,FALSE,TRUE,TRUE
+"Sausage, chicken, fried",245,18.3,18.5,76,0,15,0.8,0,0,FALSE,TRUE,TRUE
+"Sausage, chicken, grilled",244,18.2,18.4,80,0,14,0.7,0,0,FALSE,TRUE,TRUE
+"Sausage, pork, fried",280,20.5,21.3,75,0,8,0.9,0,0,FALSE,TRUE,TRUE
+"Sausage, pork, grilled",296,23.2,21.9,82,0,8,1,0,0,FALSE,TRUE,TRUE
+Mortadella,269,12,21.6,83,5.8,67,1.5,24.55,0,FALSE,FALSE,FALSE
+"Turkey, frozen, roast",163,26.2,5.7,91,0,14,0.6,0,0,FALSE,TRUE,TRUE
+"Pork steak, fried",311,33.7,18.5,126,0,69,0.8,29.22,0,FALSE,TRUE,TRUE
+"Pork, steak, grilled",280,28.9,17.4,82,0,34,0.9,0,0,FALSE,TRUE,TRUE
+"Pork, rib, roast",402,30.2,30.3,113,0,17,1,0,0,FALSE,TRUE,TRUE
+"Pork, loin, roast",210,35.7,6.4,103,0,20,0.5,0,0,FALSE,TRUE,TRUE
+"Pork, shank, roast",262,32.1,13.9,110,0,18,1.3,0,0,FALSE,TRUE,TRUE
+"Ham, with fat cover",128,14.4,6.8,40,1.4,12,0.7,0,0,FALSE,TRUE,TRUE
+"Ham, without fat cover",94,14.3,2.7,36,2.1,23,0.8,0,0,TRUE,TRUE,TRUE
+"Kibbeh, roast",136,14.6,2.7,34,12.9,16,2.2,0,0,FALSE,TRUE,TRUE
+"Kibbeh, fried",254,14.9,15.8,38,12.3,22,2,0,0,FALSE,TRUE,TRUE
+Salami,398,25.8,30.6,85,2.9,87,1.3,0,0,FALSE,TRUE,FALSE
+"Bacon, fried",697,27.3,64.3,89,0,9,0.9,0,0,TRUE,TRUE,TRUE
+"Milk drink, peach",55,2.1,1.9,5,7.6,89,0,0,2.1,TRUE,FALSE,FALSE
+"Yogurt, plain",51,4.1,3,14,1.9,143,0,22.5,0.9,TRUE,TRUE,FALSE
+"Yogurt, natural, skimmed",41,3.8,0.3,3,5.8,157,0,0,0.3,TRUE,TRUE,FALSE
+"Yogurt, strawberry flavor",70,2.7,2.3,7,9.7,101,0,27.03,0,TRUE,TRUE,FALSE
+"Yogurt, peach flavor",68,2.5,2.3,8,9.4,95,0.1,21.28,0,TRUE,TRUE,FALSE
+"Milk, condensed",313,7.7,6.7,28,57,246,0.1,52.95,2.1,FALSE,FALSE,FALSE
+"Milk, goat",66,3.1,3.8,14,5.2,112,0.1,34.74,0,FALSE,FALSE,FALSE
+"Milk, cow's, chocolate",83,2.1,2.2,6,14.2,70,0.5,38.94,3.3,FALSE,FALSE,FALSE
+"Milk, cow's, skimmed, powder",362,34.7,0.9,25,53,1363,0.9,299.46,0,TRUE,FALSE,FALSE
+"Milk, cow's, whole, powder",497,25.4,26.9,85,39.2,890,0.5,361.06,0,TRUE,FALSE,FALSE
+"Milk, fermented",70,1.9,0.1,2,15.7,72,0,0,0.5,FALSE,FALSE,FALSE
+"Cheese, minas, fresh",264,17.4,20.2,62,3.2,579,0.9,160.51,0,TRUE,TRUE,TRUE
+"Cheese, minas, semi-ripe",321,21.2,24.6,76,3.6,696,0.2,111.33,0,TRUE,TRUE,TRUE
+"Cheese, mozzarella",330,22.6,25.2,80,3,875,0.3,109,0,FALSE,TRUE,TRUE
+"Cheese, parmesan",453,35.6,33.5,106,1.7,992,0.5,66.15,0,FALSE,TRUE,TRUE
+"Cheese, pasteurized",303,9.4,27.4,82,5.7,323,0.3,57.31,0,FALSE,FALSE,FALSE
+"Cheese, petit suisse, strawberry",121,5.8,2.8,12,18.5,731,0.1,272.66,0,TRUE,TRUE,TRUE
+"Cheese, prato",360,22.7,29.1,91,1.9,940,0.3,122.67,0,FALSE,TRUE,TRUE
+"Cheese, requeijão, creamy",257,9.6,23.4,74,2.4,259,0.1,194.59,0,TRUE,TRUE,TRUE
+"Cheese, ricotta",140,12.6,8.1,49,3.8,253,0.1,52.85,0,TRUE,TRUE,TRUE
+"Omelette, cheese",268,15.6,22,384,0.4,166,1.4,58.75,0,TRUE,TRUE,TRUE
+"Egg, chicken, white, cooked/10minutes",59,13.4,0.1,0,0,6,0.1,0,0,TRUE,TRUE,TRUE
+"Egg, chicken, yolk, cooked/10minutes",353,15.9,30.8,1272,1.6,114,2.9,148.48,0,TRUE,TRUE,TRUE
+"Egg, chicken, whole, cooked/10minutes",146,13.3,9.5,397,0.6,49,1.5,32.44,0,TRUE,TRUE,TRUE
+"Egg, chicken, whole, fried",240,15.6,18.6,516,1.2,73,2.1,93.89,0,TRUE,TRUE,TRUE
+"Chocolate, milk",540,7.2,30.3,17,59.6,191,1.6,0,0,TRUE,FALSE,FALSE
+"Chocolate, milk, with Brazil nuts",559,7.4,34.2,16,55.4,171,1.5,36.15,1.4,TRUE,FALSE,FALSE
+"Chocolate, milk, diet",557,6.9,33.8,13,56.3,188,3.3,7.04,2,FALSE,FALSE,FALSE
+"Chocolate, semi-sweet",475,4.9,29.9,2,62.4,45,3.6,0,2.1,FALSE,FALSE,FALSE
+White coconut,449,1.1,13.6,0,81.4,7,1.2,0,0,FALSE,FALSE,FALSE
+"Jam, pumpkin, creamy",199,0.9,0.2,0,54.6,13,0.9,0,0.1,TRUE,FALSE,FALSE
+"Jam, milk, creamy",306,5.5,6,20,59.5,195,0.1,106.91,0,TRUE,FALSE,FALSE
+"Jam, mocotó, natural",106,2.1,0.1,0,24.2,4,0.1,0,0,TRUE,FALSE,FALSE
+Maria mole,301,3.8,0.2,0,73.6,13,0.4,0,0,FALSE,FALSE,FALSE
+"Maria mole, burnt coconut",307,3.9,0.1,0,75.1,19,0.5,0,0,FALSE,FALSE,FALSE
+Marmalade,257,0.4,0.1,0,70.8,11,0.7,0,0,FALSE,FALSE,FALSE
+"Honey, bee honey",309,0,0,0,84,10,0.3,0,0.7,TRUE,FALSE,FALSE
+Honeydew,297,0,0,0,76.6,102,5.4,0,0,TRUE,FALSE,FALSE
+Quindim,411,4.7,24.4,271,46.3,37,1.4,75.98,0,FALSE,FALSE,FALSE
+Rapadura,352,1,0.1,0,90.8,30,4.4,0,0,FALSE,FALSE,FALSE
+"Olives, black, canned",194,1.2,20.3,0,5.5,59,5.5,0,0,FALSE,TRUE,TRUE
+"Olive, green, preserved",137,0.9,14.2,0,4.1,46,0.2,0,0,FALSE,TRUE,TRUE
+"Whipped cream, spray, with vegetable fat",315,0.5,27.3,0,16.9,2,0,0,0,TRUE,FALSE,FALSE
+Acarajé,289,8.3,19.9,25,19.1,124,1.9,0,0,FALSE,FALSE,FALSE
+Arroz carreteiro,154,10.8,7.1,36,11.6,13,1,0,0,TRUE,FALSE,TRUE
+"Baião de dois, rice and string beans",136,6.2,3.2,4,20.4,33,0.6,0,0,TRUE,TRUE,TRUE
+Barreado,165,18.3,9.5,60,0.2,15,2.4,0,0,FALSE,FALSE,FALSE
+Sirloin steak,291,23.7,21.1,257,0,26,2.1,36.8,0,FALSE,TRUE,TRUE
+Rice cake,274,8,8.3,70,41.7,24,2.1,0,0,TRUE,FALSE,FALSE
+Bahian prawns,101,7.9,6,117,3.2,43,1.4,0,4.1,TRUE,TRUE,TRUE
+Cabbage cigar,78,6.8,1.1,21,10.1,23,0.9,0,4.8,FALSE,FALSE,FALSE
+"Corn couscous, cooked with salt",113,2.2,0.7,0,25.3,2,0.2,0,0,TRUE,TRUE,TRUE
+"Couscous, paulista",142,2.6,4.6,15,22.5,14,0.3,0,0,FALSE,TRUE,TRUE
+"Cuxá, sauce",80,5.6,3.6,58,5.7,105,0.9,48.87,10.3,FALSE,FALSE,FALSE
+Dobradinha,125,19.8,4.4,144,0,11,1,0,0,FALSE,FALSE,TRUE
+Beef stroganoff,173,15,10.8,66,3,28,2.7,27.63,0,FALSE,TRUE,TRUE
+Chicken stroganoff,157,17.6,8,80,2.6,26,1.5,28.22,0,FALSE,TRUE,TRUE
+Feijão tropeiro mineiro,152,10.2,6.8,68,19.6,41,2.2,8.77,0,TRUE,FALSE,FALSE
+Feijoada,117,8.7,6.5,22,11.6,32,1.3,0,0,FALSE,FALSE,FALSE
+Chicken with saffron,113,9.7,6.2,50,4.1,13,0.8,8.09,5.3,FALSE,TRUE,TRUE
+"Pasta, bolognese sauce",120,4.9,0.9,7,22.5,11,1.4,0,0,FALSE,TRUE,TRUE
+Maniçoba,134,10,8.7,43,3.4,66,3.2,332.81,0,FALSE,FALSE,FALSE
+Kibbeh,86,8.6,2.7,0,6.6,8,0.8,157.38,0,FALSE,FALSE,FALSE
+Vegetable salad with mayonnaise,96,1.1,7,7,8.9,12,0.2,424.13,0,FALSE,TRUE,FALSE
+"Vegetable salad, steamed",35,2,0.3,0,7.1,33,0.4,765,29.4,FALSE,TRUE,TRUE
+"Salpicão, chicken",148,13.9,7.8,53,4.6,9,0.3,21.75,9.3,TRUE,TRUE,TRUE
+Sarapatel,123,18.5,4.4,315,1.1,12,7.2,1463.67,0,FALSE,FALSE,TRUE
+Tabbouleh,57,2,1.2,0,10.6,19,0.6,0,16.2,FALSE,TRUE,TRUE
+Tacacá,47,7,0.4,71,3.4,45,0.9,53.04,0,FALSE,TRUE,FALSE
+"Tapioca, with butter",348,0.1,10.9,31,63.6,30,0.2,75.27,0,TRUE,TRUE,TRUE
+"Tucupi, with chili pepper",27,2.1,0.3,0,4.7,28,1.1,75.88,46.4,FALSE,TRUE,TRUE
+Stewed cow,145,5.1,9.3,19,10.1,63,0.7,0,0,FALSE,FALSE,FALSE
+Vatapá,255,6,23.2,44,9.7,47,1.4,0,0,FALSE,FALSE,FALSE
+Virado à paulista,307,10.2,25.6,66,14.1,41,1.1,10.17,0,FALSE,FALSE,FALSE
+Yakisoba,113,7.5,2.6,0,18.3,14,0.6,93,0,TRUE,TRUE,FALSE
+Raw peanuts,544,27.2,43.9,0,20.3,0,2.5,0,0,FALSE,FALSE,FALSE
+"Peanuts, roasted, salted",606,22.5,54,0,18.7,39,1.3,0,0,TRUE,TRUE,FALSE
+"Peas, in pods",88,7.5,0.5,0,14.2,24,1.4,0,12.4,TRUE,FALSE,FALSE
+"Peas, canned, drained",74,4.6,0.4,0,13.4,22,1.4,13.75,0,TRUE,TRUE,TRUE
+"Beans, carioca, boiled",76,4.8,0.5,0,13.6,27,1.3,0,0,TRUE,TRUE,TRUE
+"Beans, refried, boiled",78,5.1,0.6,0,13.5,17,1.1,0,0,TRUE,TRUE,TRUE
+"Beans, jalo, cooked",93,6.1,0.5,0,16.5,29,1.9,0,0,TRUE,TRUE,TRUE
+"Beans, black, cooked",77,4.5,0.5,0,14,29,1.5,0,0,TRUE,TRUE,TRUE
+"Beans, striped, cooked",85,5.5,0.4,0,15.3,29,1.4,0,0,TRUE,TRUE,TRUE
+"Beans, pink, cooked",68,4.5,0.5,0,11.8,19,1.2,0,0,TRUE,TRUE,TRUE
+"Beans, purple, cooked",77,5.7,0.5,0,12.9,23,1.4,0,0,TRUE,TRUE,TRUE
+"Lentil, boiled",93,6.3,0.5,0,16.3,16,1.5,0,0,FALSE,FALSE,FALSE
+"Paçoca, peanut",487,16,26.1,0,52.4,22,1.1,0,0,TRUE,FALSE,FALSE
+"Pé-de-moleque, peanut",503,13.2,28,0,54.7,27,1.3,0,0,TRUE,FALSE,FALSE
+"Lupins, pickled",121,11.1,3.8,0,12.4,16,0.3,0,0,TRUE,TRUE,TRUE
+"Almond, roasted, salted",581,18.6,47.3,0,29.5,237,3.1,0,0,TRUE,TRUE,TRUE
+"Cashew nuts, roasted, salted",570,18.5,46.3,0,29.1,33,5.2,0,0,TRUE,TRUE,TRUE
+"Brazil nuts, raw",643,14.5,63.5,0,15.1,146,2.3,0,0,TRUE,FALSE,FALSE
+"Coconut, raw",406,3.7,42,0,10.4,6,1.8,0,2.5,TRUE,TRUE,FALSE
+"Pine nut, cooked",174,3,0.7,0,43.9,16,0.8,0,27.7,FALSE,TRUE,TRUE
+"Pupunha, cooked",219,2.5,12.8,0,29.6,28,0.5,1313.17,2.2,FALSE,TRUE,TRUE
+"Walnut, raw",620,14,59.4,0,18.4,105,2,0,0,TRUE,FALSE,FALSE

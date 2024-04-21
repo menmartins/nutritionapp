@@ -1,0 +1,33 @@
+Read the CSV Files: Load both CSV files to understand and manipulate the data.
+Data Processing:
+For requisitos.csv, process the data to obtain daily nutritional requirements.
+For tbalimentos.csv, organize the food items and their nutritional content.
+Optimization Logic:
+Develop an algorithm to select foods that best match the nutritional requirements for each meal.
+Meal Plan Generation:
+Generate a weekly meal plan with three meals per day (breakfast, lunch, dinner) that meets the requirements.
+Streamlit Interface:
+Set up the Streamlit app to display the meal plans and allow user interaction, such as selecting different user requirements or adjusting meals.
+User Interface Design: We need to create a user interface in Streamlit that lets users choose their gender and weight to fetch their daily nutritional requirements.
+Meal Plan Algorithm: We need to devise an algorithm that will use the food items from tbalimentos.csv to meet the daily requirements outlined in requisitos.csv. This algorithm needs to ensure nutritional balance and variety across three meals for seven days.
+Build the Streamlit App:
+Input for selecting user gender and weight.
+Display the selected nutritional requirements.
+Show the resulting 7-day meal plan with three meals per day.
+Optional Features:
+Allow users to modify their daily intake needs.
+Include options for dietary restrictions or preferences.
+
+Use a more robust interpolation method: We could consider using constrained or regularized interpolation techniques that can handle boundary values better or simply apply hard limits to the nutrient values to keep them within realistic boundaries.
+
+Integration: Use this interpolated dataset in your Streamlit app to calculate daily meal plans that match the interpolated nutritional requirements.
+App Development: Continue enhancing the app's functionality, such as incorporating meal planning logic and user customization features.
+Validation and Testing: It's important to validate these interpolated values with a nutritional expert to ensure they are reasonable for dietary planning.
+
+Data Loading: The load_data function simulates loading your actual interpolated nutritional data.
+User Interface: Users can select their weight using a slider.
+Display Nutritional Requirements: The app displays the nutritional requirements based on the selected weight.
+Meal Plan Placeholder: The actual meal planning logic, which will select meals based on these requirements, is yet to be implemented.
+Next Steps:
+Implement Meal Planning Logic: You will need to develop the logic that uses the nutritional requirements to select appropriate meals from your food database.
+Testing and Validation: Ensure the app functions correctly across the full range of inputs and that the meal recommendations are nutritionally balanced.
