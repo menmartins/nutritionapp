@@ -40,7 +40,7 @@ def select_foods_for_meal(nutritional_requirements, tbalimentos_df, available_fo
 
     # Linking binary variables to quantity variables
     for food in available_foods:
-        prob += food_vars[food] >= 10 * food_selection_vars[food]
+        prob += food_vars[food] >= 50 * food_selection_vars[food]
         prob += food_vars[food] <= 1000 * food_selection_vars[food]
 
     prob.solve()
