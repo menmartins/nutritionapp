@@ -23,7 +23,7 @@ def get_nutritional_requirements(weight, gender, requisitos_df):
     # Return a Series with nutrient names as index and rounded values
     return requirements.drop(['Peso', 'Sexo']).round(1)
 
-def select_foods_for_meal(nutritional_requirements, tbalimentos_df, available_foods):
+def select_foods_for_meal(nutritional_requirements, tbalimentos_df, available_foods, selected_foods_today):
     prob = LpProblem("MealSelection", LpMinimize)
     
     # Only include foods that are available for today's rotation
@@ -49,7 +49,7 @@ def select_foods_for_meal(nutritional_requirements, tbalimentos_df, available_fo
 
 def generate_weekly_meal_plan(requirements, tbalimentos_df, portion_of_day_target):
     weekly_plan = {}
-
+    
     # Creating 21 food groups for rotation (7 days * 3 meals)
     food_rotation_groups = {
         (i, meal_time): tbalimentos_df.index[(i * 3 + meal_index)::21]
@@ -62,16 +62,17 @@ def generate_weekly_meal_plan(requirements, tbalimentos_df, portion_of_day_targe
 
         for meal_time, portion in zip(["Breakfast", "Lunch", "Dinner"], portion_of_day_target):
             meal_requirements = {nutrient: req * portion for nutrient, req in requirements.items()}
-            available_foods = food_rotation_groups[(day_index, meal_time)]  # Specific food group for this day and meal
-            selected_foods = select_foods_for_meal(meal_requirements, tbalimentos_df, available_foods)
+            available_foods = food_rotation_groups[(day_index, meal_time)]
+            selected_foods = select_foods_for_meal(meal_requirements, tbalimentos_df, available_foods, set())
             daily_plan[meal_time] = selected_foods
         
         weekly_plan[day] = daily_plan
     
-    return weekly_plan
+    return weekly_plan # Return the weekly plan 
 
 # Streamlit app UI
 st.title('Weekly Meal Planner')
+st.image('image.jpg', caption=None, width=None, use_column_width=None, clamp=False, channels="RGB", output_format="auto")
 
 with st.sidebar:
     st.header("User Input")
@@ -88,7 +89,8 @@ if submit_button:
     portion_of_day_target = [0.25, 0.35, 0.4]  # Example: Breakfast, Lunch, Dinner
 
     meal_plan = generate_weekly_meal_plan(requirements, tbalimentos_df, portion_of_day_target)
-    
+
+    # Loop to display the meal plan (moved outside the function)
     for day, meals in meal_plan.items():
         st.subheader(day)
         for meal_type, meal in meals.items():
@@ -98,6 +100,7 @@ if submit_button:
             
             # Calculate nutrient totals
             nutrients_totals = defaultdict(float)
+            total_calories = 0 
             for food, portion in meal.items():
                 food_name = sanitize_food_name(food)
                 try:
@@ -109,9 +112,13 @@ if submit_button:
                     nutrients_totals['Vitamin C'] += food_data['VitaminaC'] * (portion / 100)
                     nutrients_totals['Calcium (mg)'] += food_data['Calcio_mg'] * (portion / 100)
                     nutrients_totals['Iron (mg)'] += food_data['Ferro_mg'] * (portion / 100)
+                    total_calories += food_data['Energia_kcal'] * (portion / 100) 
                 except KeyError:
                     st.error(f"Warning: '{food_name}' not found in the database and will be skipped.")
             
             # Create a table for nutrient totals
             nutrients_table = pd.DataFrame(list(nutrients_totals.items()), columns=['Nutrient', 'Total'])
             st.table(nutrients_table.style.format({'Total': "{:.2f}"}))
+
+            # Display total calories
+            st.write(f"**Total Calories:** {total_calories:.2f} kcal") 
