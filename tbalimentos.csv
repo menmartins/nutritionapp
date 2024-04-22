@@ -14,10 +14,10 @@
 17,"Cake, ready, coconut",Cereais e derivados,333,5.7,11.3,63,52.3,57,0.8,0,0,FALSE,FALSE,FALSE
 18,"Cake, ready, corn",Cereais e derivados,311,4.8,12.4,82,45.1,83,0.7,56.89,0,FALSE,FALSE,FALSE
 20,"Canjica, with whole milk",Cereais e derivados,112,2.4,1.2,1,23.6,43,0.1,0,0,TRUE,TRUE,TRUE
-21,"Cereals, corn flakes, salted",Cereais e derivados,370,7.3,1.6,0,80.8,2,0.5,0,0,TRUE,TRUE,TRUE
-22,"Cereal, corn, flakes, unsalted",Cereais e derivados,363,6.9,1.2,0,80.4,2,1.7,0,0,TRUE,TRUE,TRUE
-23,"Cereals, porridge, corn, children's",Cereais e derivados,394,6.4,1.1,0,87.3,219,3,21.42,109.4,TRUE,TRUE,FALSE
-24,"Cereals, vitamin mix, wheat, barley and oats",Cereais e derivados,381,8.9,2.1,0,81.6,584,12.6,0,13.1,TRUE,TRUE,TRUE
+21,"Cereals, corn flakes, salted",Cereais e derivados,370,7.3,1.6,0,80.8,2,0.5,0,0,TRUE,FALSE,FALSE
+22,"Cereal, corn, flakes, unsalted",Cereais e derivados,363,6.9,1.2,0,80.4,2,1.7,0,0,TRUE,FALSE,FALSE
+23,"Cereals, porridge, corn, children's",Cereais e derivados,394,6.4,1.1,0,87.3,219,3,21.42,109.4,TRUE,FALSE,FALSE
+24,"Cereals, vitamin mix, wheat, barley and oats",Cereais e derivados,381,8.9,2.1,0,81.6,584,12.6,0,13.1,TRUE,FALSE,TRUE
 25,"Breakfast cereal, corn",Cereais e derivados,365,7.2,1,0,83.8,143,3.1,46.38,17.3,TRUE,FALSE,FALSE
 26,"Breakfast cereal, corn, sugar",Cereais e derivados,377,4.7,0.7,0,88.8,56,3.9,46.38,14.6,TRUE,FALSE,FALSE
 29,"Curau, green corn",Cereais e derivados,78,2.4,1.6,5,13.9,53,0.4,48.21,0,TRUE,TRUE,TRUE
