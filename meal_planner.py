@@ -43,11 +43,6 @@ def select_foods_for_meal(nutritional_requirements, tbalimentos_df, available_fo
         prob += food_vars[food] >= 50 * food_selection_vars[food]  # Minimum 50g
         prob += food_vars[food] <= 1000 * food_selection_vars[food]
 
-    # Penalty for selecting the same food again in the same day
-    for food in available_foods:
-        if food in selected_foods_today:
-            prob += food_vars[food] * 1000  # High penalty for selecting the same food again
-
     prob.solve()
 
     return {v.name.replace("Food_", ""): v.varValue for v in prob.variables() if v.varValue > 0 and "FoodSelection" not in v.name}
