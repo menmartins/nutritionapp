@@ -23,7 +23,7 @@ def get_nutritional_requirements(weight, gender, requisitos_df):
     # Return a Series with nutrient names as index and rounded values
     return requirements.drop(['Peso', 'Sexo']).round(1)
 
-def select_foods_for_meal(nutritional_requirements, tbalimentos_df, available_foods):
+def select_foods_for_meal(nutritional_requirements, tbalimentos_df, available_foods, selected_foods_today):
     prob = LpProblem("MealSelection", LpMinimize)
     
     # Only include foods that are available for today's rotation
@@ -38,10 +38,15 @@ def select_foods_for_meal(nutritional_requirements, tbalimentos_df, available_fo
     for nutrient, requirement in nutritional_requirements.items():
         prob += lpSum([food_vars[name] * value / 100 for name, value in tbalimentos_df.loc[available_foods, nutrient].items()]) >= requirement
 
-    # Linking binary variables to quantity variables
+    # Linking binary variables to quantity variables with minimum portion size
     for food in available_foods:
-        prob += food_vars[food] >= 50 * food_selection_vars[food]
+        prob += food_vars[food] >= 50 * food_selection_vars[food]  # Minimum 50g
         prob += food_vars[food] <= 1000 * food_selection_vars[food]
+
+    # Penalty for selecting the same food again in the same day
+    for food in available_foods:
+        if food in selected_foods_today:
+            prob += food_vars[food] * 1000  # High penalty for selecting the same food again
 
     prob.solve()
 
@@ -49,15 +54,23 @@ def select_foods_for_meal(nutritional_requirements, tbalimentos_df, available_fo
 
 def generate_weekly_meal_plan(requirements, tbalimentos_df, portion_of_day_target):
     weekly_plan = {}
-    food_rotation_groups = {i: tbalimentos_df.index[i::7] for i in range(7)}  # Creating 7 food groups for rotation
+
+    # Creating 21 food groups for rotation (7 days * 3 meals)
+    food_rotation_groups = {
+        (i, meal_time): tbalimentos_df.index[(i * 3 + meal_index)::21]
+        for i in range(7)
+        for meal_index, meal_time in enumerate(["Breakfast", "Lunch", "Dinner"])
+    } 
 
     for day_index, day in enumerate(["Monday", "Tuesday", "Wednesday", "Thursday", "Friday", "Saturday", "Sunday"]):
         daily_plan = {}
-        available_foods = food_rotation_groups[day_index]  # Only these foods are available today
+
         for meal_time, portion in zip(["Breakfast", "Lunch", "Dinner"], portion_of_day_target):
             meal_requirements = {nutrient: req * portion for nutrient, req in requirements.items()}
-            selected_foods = select_foods_for_meal(meal_requirements, tbalimentos_df, available_foods)
+            available_foods = food_rotation_groups[(day_index, meal_time)]  # Specific food group for this day and meal
+            selected_foods = select_foods_for_meal(meal_requirements, tbalimentos_df, available_foods, set())
             daily_plan[meal_time] = selected_foods
+        
         weekly_plan[day] = daily_plan
     
     return weekly_plan
