@@ -23,7 +23,7 @@ def get_nutritional_requirements(weight, gender, requisitos_df):
     # Return a Series with nutrient names as index and rounded values
     return requirements.drop(['Peso', 'Sexo']).round(1)
 
-def select_foods_for_meal(nutritional_requirements, tbalimentos_df, available_foods, selected_foods_today):
+def select_foods_for_meal(nutritional_requirements, tbalimentos_df, available_foods):
     prob = LpProblem("MealSelection", LpMinimize)
     
     # Only include foods that are available for today's rotation
@@ -63,7 +63,7 @@ def generate_weekly_meal_plan(requirements, tbalimentos_df, portion_of_day_targe
         for meal_time, portion in zip(["Breakfast", "Lunch", "Dinner"], portion_of_day_target):
             meal_requirements = {nutrient: req * portion for nutrient, req in requirements.items()}
             available_foods = food_rotation_groups[(day_index, meal_time)]  # Specific food group for this day and meal
-            selected_foods = select_foods_for_meal(meal_requirements, tbalimentos_df, available_foods, set())
+            selected_foods = select_foods_for_meal(meal_requirements, tbalimentos_df, available_foods)
             daily_plan[meal_time] = selected_foods
         
         weekly_plan[day] = daily_plan
