@@ -40,7 +40,7 @@ def select_foods_for_meal(nutritional_requirements, tbalimentos_df, available_fo
 
     # Linking binary variables to quantity variables with minimum portion size
     for food in available_foods:
-        prob += food_vars[food] >= 50 * food_selection_vars[food]  # Minimum 50g
+        prob += food_vars[food] >= 50 * food_selection_vars[food] 
         prob += food_vars[food] <= 1000 * food_selection_vars[food]
 
     prob.solve()
@@ -74,51 +74,85 @@ def generate_weekly_meal_plan(requirements, tbalimentos_df, portion_of_day_targe
 st.title('Weekly Meal Planner')
 st.image('image.jpg', caption=None, width=None, use_column_width=None, clamp=False, channels="RGB", output_format="auto")
 
-with st.sidebar:
-    st.header("User Input")
-    with st.form("input_form"):
+# Sidebar
+st.sidebar.header("User Input")
+
+# Checkbox for Advanced Mode
+advanced_mode = st.sidebar.checkbox("Advanced Mode")
+
+if not advanced_mode:
+    # Basic Mode Inputs
+    with st.sidebar.form("basic_input_form"):
         gender = st.selectbox('Select your gender', ['Male', 'Female'])
         weight = st.slider('Select your weight (kg)', min_value=20, max_value=150, step=1)
         submit_button = st.form_submit_button("Submit")
 
-if submit_button:
-    requirements = get_nutritional_requirements(weight, gender.lower(), requisitos_df)
-    st.write("Nutritional Requirements")
-    requirements_table = requirements.to_frame('Value').style.format("{:.1f}")
-    st.table(requirements_table)
-    portion_of_day_target = [0.25, 0.35, 0.4]  # Example: Breakfast, Lunch, Dinner
+if advanced_mode or submit_button:
+    if advanced_mode:
+        # Advanced Mode Inputs
+        st.sidebar.subheader("Nutritional Requirements")
+        with st.sidebar.form("advanced_input_form"):
+            protein_requirement = st.number_input("Protein Requirement (g)", min_value=0.0, step=1.0, value=0.0)
+            carb_requirement = st.number_input("Carbohydrate Requirement (g)", min_value=0.0, step=1.0, value=0.0)
+            lipid_requirement = st.number_input("Lipid Requirement (g)", min_value=0.0, step=1.0, value=0.0)
+            vitamin_a_requirement = st.number_input("Vitamin A Requirement (IU)", min_value=0.0, step=1.0, value=0.0)
+            vitamin_c_requirement = st.number_input("Vitamin C Requirement (mg)", min_value=0.0, step=1.0, value=0.0)
+            calcium_requirement = st.number_input("Calcium Requirement (mg)", min_value=0.0, step=1.0, value=0.0)
+            iron_requirement = st.number_input("Iron Requirement (mg)", min_value=0.0, step=1.0, value=0.0)
+            calorie_requirement = st.number_input("Calorie Requirement (kcal)", min_value=0.0, step=1.0, value=0.0)
+            submit_button = st.form_submit_button("Submit")
 
-    meal_plan = generate_weekly_meal_plan(requirements, tbalimentos_df, portion_of_day_target)
+    if submit_button:
+        if advanced_mode:
+            requirements = {
+                "Proteinas_g": protein_requirement,
+                "Carboidratos_g": carb_requirement,
+                "Lipideos_g": lipid_requirement,
+                "VitaminaA": vitamin_a_requirement,
+                "VitaminaC": vitamin_c_requirement,
+                "Calcio_mg": calcium_requirement,
+                "Ferro_mg": iron_requirement,
+                "Energia_kcal": calorie_requirement
+            }
+        else:
+            requirements = get_nutritional_requirements(weight, gender.lower(), requisitos_df)
 
-    # Loop to display the meal plan (moved outside the function)
-    for day, meals in meal_plan.items():
-        st.subheader(day)
-        for meal_type, meal in meals.items():
-            food_table = pd.DataFrame(list(meal.items()), columns=['Food', 'Portion (g)'])
-            st.write(f"{meal_type}:")
-            st.table(food_table.style.format({'Portion (g)': "{:.1f}"}))
-            
-            # Calculate nutrient totals
-            nutrients_totals = defaultdict(float)
-            total_calories = 0 
-            for food, portion in meal.items():
-                food_name = sanitize_food_name(food)
-                try:
-                    food_data = tbalimentos_df.loc[food_name]
-                    nutrients_totals['Proteins (g)'] += food_data['Proteinas_g'] * (portion / 100)
-                    nutrients_totals['Carbohydrates (g)'] += food_data['Carboidratos_g'] * (portion / 100)
-                    nutrients_totals['Lipids (g)'] += food_data['Lipideos_g'] * (portion / 100)
-                    nutrients_totals['Vitamin A'] += food_data['VitaminaA'] * (portion / 100)
-                    nutrients_totals['Vitamin C'] += food_data['VitaminaC'] * (portion / 100)
-                    nutrients_totals['Calcium (mg)'] += food_data['Calcio_mg'] * (portion / 100)
-                    nutrients_totals['Iron (mg)'] += food_data['Ferro_mg'] * (portion / 100)
-                    total_calories += food_data['Energia_kcal'] * (portion / 100) 
-                except KeyError:
-                    st.error(f"Warning: '{food_name}' not found in the database and will be skipped.")
-            
-            # Create a table for nutrient totals
-            nutrients_table = pd.DataFrame(list(nutrients_totals.items()), columns=['Nutrient', 'Total'])
-            st.table(nutrients_table.style.format({'Total': "{:.2f}"}))
+        st.write("Nutritional Requirements")
+        requirements_table = pd.Series(requirements).to_frame('Value').style.format("{:.1f}")
+        st.table(requirements_table)
+        portion_of_day_target = [0.25, 0.35, 0.4]  # Example: Breakfast, Lunch, Dinner
 
-            # Display total calories
-            st.write(f"**Total Calories:** {total_calories:.2f} kcal") 
+        meal_plan = generate_weekly_meal_plan(requirements, tbalimentos_df, portion_of_day_target)
+
+        # Loop to display the meal plan (moved outside the function)
+        for day, meals in meal_plan.items():
+            st.subheader(day)
+            for meal_type, meal in meals.items():
+                food_table = pd.DataFrame(list(meal.items()), columns=['Food', 'Portion (g)'])
+                st.write(f"{meal_type}:")
+                st.table(food_table.style.format({'Portion (g)': "{:.1f}"}))
+                
+                # Calculate nutrient totals
+                nutrients_totals = defaultdict(float)
+                total_calories = 0 
+                for food, portion in meal.items():
+                    food_name = sanitize_food_name(food)
+                    try:
+                        food_data = tbalimentos_df.loc[food_name]
+                        nutrients_totals['Proteins (g)'] += food_data['Proteinas_g'] * (portion / 100)
+                        nutrients_totals['Carbohydrates (g)'] += food_data['Carboidratos_g'] * (portion / 100)
+                        nutrients_totals['Lipids (g)'] += food_data['Lipideos_g'] * (portion / 100)
+                        nutrients_totals['Vitamin A'] += food_data['VitaminaA'] * (portion / 100)
+                        nutrients_totals['Vitamin C'] += food_data['VitaminaC'] * (portion / 100)
+                        nutrients_totals['Calcium (mg)'] += food_data['Calcio_mg'] * (portion / 100)
+                        nutrients_totals['Iron (mg)'] += food_data['Ferro_mg'] * (portion / 100)
+                        total_calories += food_data['Energia_kcal'] * (portion / 100) 
+                    except KeyError:
+                        st.error(f"Warning: '{food_name}' not found in the database and will be skipped.")
+                
+                # Create a table for nutrient totals
+                nutrients_table = pd.DataFrame(list(nutrients_totals.items()), columns=['Nutrient', 'Total'])
+                st.table(nutrients_table.style.format({'Total': "{:.2f}"}))
+
+                # Display total calories
+                st.write(f"**Total Calories:** {total_calories:.2f} kcal")
